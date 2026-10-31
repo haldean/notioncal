@@ -1,0 +1,9 @@
+name = "notioncal"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+routes = [{ pattern = "notioncal.brownchao.com", custom_domain = true }]
+
+# the response sets Cache-Control; Cloudflare serves hits before the Worker runs.
+# safe because the feed token is in the URL path (part of the cache key) and errors are no-store.
+[cache]
+enabled = true

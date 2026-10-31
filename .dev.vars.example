@@ -1,0 +1,2 @@
+NOTION_TOKEN=secret_xxx
+FEEDS={"some-long-random-token":"notion-database-id"}
